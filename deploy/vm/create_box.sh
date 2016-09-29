@@ -1,9 +1,11 @@
 #!/bin/bash
 
 set -e
+BOX_PATH=martini
+VM_BOX=dev-env.box
 
 #export PACKER_LOG=1
-rm ./box/dev-env.box || true
+rm ./box/$BOX_PATH/$VM_BOX || true
 #エラー時はvagrant plugin install vagrant-exec
 vagrant exec sudo ln -s -f /dev/null /etc/udev/rules.d/70-persistent-net.rules
-vagrant package -o ./box/dev-env.box
+vagrant package -o ./box/$BOX_PATH/$VM_BOX

@@ -58,3 +58,4 @@ fabric.properties
 .vagrant/
 *.box
 deploy/vm/cookbooks/*
+nodes

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+BOX=martini
 
 # vagrant box remove dev-env --all || true
-vagrant box add dev-env metadata.json
+vagrant box add $BOX metadata.json

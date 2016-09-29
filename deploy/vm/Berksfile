@@ -3,3 +3,4 @@ source "https://supermarket.chef.io"
 metadata
 
 cookbook 'gin_tonic', path: './cookbooks/gin_tonic'
+cookbook 'martini',   path: './cookbooks/martini'

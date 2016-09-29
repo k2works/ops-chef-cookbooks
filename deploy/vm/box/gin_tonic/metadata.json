@@ -1,5 +1,5 @@
 {
-  "name": "dev-env",
+  "name": "gin_tonic",
   "description": "VM for Development Environments.",
   "versions": [
     {
