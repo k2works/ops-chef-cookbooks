@@ -10,7 +10,7 @@ v0.12.16
 v4.6.0
 v6.7.0
 ].each do |dir|
-  describe directory("/usr/local/src/nvm/versions/node/#{dir}/") do
+  describe directory("/home/kitchen/.nvm/versions/node/#{dir}/") do
     it { should be_directory }
   end
 end

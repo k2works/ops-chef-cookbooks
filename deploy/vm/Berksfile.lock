@@ -1,6 +1,4 @@
 DEPENDENCIES
-  gin_tonic
-    path: cookbooks/gin_tonic
   martini
     path: cookbooks/martini
   ops-chef-cookooks
@@ -20,7 +18,6 @@ GRAPH
     seven_zip (>= 0.0.0)
   compat_resource (12.14.7)
   dmg (3.0.0)
-  gin_tonic (0.1.0)
   git (5.0.1)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
