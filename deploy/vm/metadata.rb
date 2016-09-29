@@ -1,0 +1,7 @@
+name             'ops-chef-cookooks'
+maintainer       'Hiroshima ARC'
+maintainer_email 'hiroshima.arc@gmail.com'
+license          'all_rights'
+description      'Installs/Configures handson'
+long_description 'Installs/Configures handson'
+version          '0.1.0'

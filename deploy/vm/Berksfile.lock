@@ -1,0 +1,10 @@
+DEPENDENCIES
+  gin_tonic
+    path: cookbooks/gin_tonic
+  ops-chef-cookooks
+    path: .
+    metadata: true
+
+GRAPH
+  gin_tonic (0.1.0)
+  ops-chef-cookooks (0.1.0)
