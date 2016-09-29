@@ -1,6 +1,6 @@
 name 'gin_tonic'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Hiroshima ARC'
+maintainer_email 'hiroshima.arc@gmail.com'
 license 'all_rights'
 description 'Installs/Configures gin_tonic'
 long_description 'Installs/Configures gin_tonic'
