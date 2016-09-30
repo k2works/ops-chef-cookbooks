@@ -24,3 +24,5 @@ $ berks package
 ```
 + [How can I fix ERROR: “\xC3” on US-ASCII when bootstrapping chef-client?](http://stackoverflow.com/questions/24962828/how-can-i-fix-error-xc3-on-us-ascii-when-bootstrapping-chef-client)
 
+#### Ubuntu 14.04でSSHログイン時のメッセージをカスタマイズ
++ [Ubuntu 14.04でSSHログイン時のメッセージをカスタマイズ](https://mistymagich.wordpress.com/2015/07/17/ubuntu-14-04%E3%81%A7ssh%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E6%99%82%E3%81%AE%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/)
