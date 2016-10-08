@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-BOX_PATH=martini
+BOX_PATH=gin_and_bitters
 VM_BOX=dev-env.box
 
 #export PACKER_LOG=1

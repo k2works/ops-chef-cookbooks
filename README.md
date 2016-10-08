@@ -13,6 +13,7 @@
 ## 構成
 
 + [GinTonic](./gin_tonic)・・・教育用レシピ
++ [Gin&Bitters](./gin_and_bitters)・・・インフラ環境構築作業用
 + [Martini](./martini)・・・モダンWebアプリケーション環境構築用(Node.js)
 
 ## Tips
