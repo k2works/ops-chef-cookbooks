@@ -22,6 +22,7 @@
 ```
 $ vagrant up
 $ vagrant ssh
+$ cd /vagrant/martini/
 $ chef gem install kitchen-docker -v 2.5.0
 $ kitchen converge
 $ kitchen verify
