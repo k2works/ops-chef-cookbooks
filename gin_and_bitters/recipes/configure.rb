@@ -1,3 +1,16 @@
+if node['etc']['passwd']['vagrant']
+  user = 'vagrant'
+  group = 'vagrant'
+end
+if node['etc']['passwd']['ubuntu']
+  user = 'ubuntu'
+  group = 'ubuntu'
+end
+if node['etc']['passwd']['kitchen']
+  user = 'kitchen'
+  group = 'kitchen'
+end
+
 template '/etc/update-motd.d/98-server-info' do
   source 'server-info.erb'
   mode '0755'
@@ -13,21 +26,11 @@ bash "Update MOTD" do
   code "run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic"
 end
 
-# For Emacs
-%w{
-  build-essential
-  texinfo
-  libx11-dev
-  libxpm-dev
-  libjpeg-dev
-  libpng-dev
-  libgif-dev
-  libtiff-dev
-  libgtk2.0-dev
-  libncurses-dev
-}.each do |package|
-  package "#{package}" do
-    action :install
-  end
+template ".bash_profile" do
+  source ".bash_profile.erb"
+  path "/home/#{user}/.bash_profile"
+  mode 0644
+  owner user
+  group group
 end
 

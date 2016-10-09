@@ -21,10 +21,6 @@ describe package 'ruby' do
   it { should be_installed }
 end
 
-describe command 'ruby -v' do
-  its('stdout') { should match /1.9.3/ }
-end
-
 describe package 'python' do
   it { should be_installed }
 end
@@ -67,7 +63,32 @@ describe file('/usr/local/heroku/bin/heroku') do
   it { should be_file }
 end
 
+# Dockerコンテナだとうまくいかない
+describe service 'jenkins' do
+  it { should be_enabled }
+  it { should be_running }
+end
+
+describe port 8080 do
+  it { should be_listening }
+end
+
+describe command 'cat /etc/group | grep docker' do
+  its('stdout') { should match /docker:x:999:kitchen/ }
+end
+
 describe file('/var/lib/jenkins') do
   it { should be_directory }
 end
 
+describe file('/usr/local/bin/emacs') do
+  it { should be_file }
+end
+
+describe file('/usr/bin/emacs') do
+  it { should be_file }
+end
+
+describe file('/home/kitchen/.bash_profile') do
+  it { should be_file }
+end

@@ -1,5 +1,9 @@
 docker_service 'default' do
-  action [:create, :start]
+  if node['etc']['passwd']['vagrant']
+    action [:create, :start]
+  else
+    action [:create]
+  end
 end
 
 bash "install docker-compose" do
@@ -20,10 +24,21 @@ bash "install docker-machine" do
   not_if {File.exists?("/usr/local/docker-machine-#{node['docker-machine']['version']}")}
 end
 
+members = []
 if node['etc']['passwd']['vagrant']
+  members << 'vagrant'
+end
+if node['etc']['passwd']['ubuntu']
+  members << 'ubuntu'
+end
+if node['etc']['passwd']['kitchen']
+  members << 'kitchen'
+end
+
+unless members.empty?
   group 'docker' do
     action [:modify]
-    members ['vagrant']
+    members members
     append true
   end
 end
