@@ -42,9 +42,3 @@ unless members.empty?
     append true
   end
 end
-
-gem_package 'kitchen-docker' do
-  gem_binary "/opt/chefdk/embedded/bin/gem"
-  version '2.5.0'
-  action :install
-end

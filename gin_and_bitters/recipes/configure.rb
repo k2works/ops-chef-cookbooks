@@ -1,12 +1,7 @@
 if node['etc']['passwd']['vagrant']
   user = 'vagrant'
   group = 'vagrant'
-end
-if node['etc']['passwd']['ubuntu']
-  user = 'ubuntu'
-  group = 'ubuntu'
-end
-if node['etc']['passwd']['kitchen']
+else
   user = 'kitchen'
   group = 'kitchen'
 end

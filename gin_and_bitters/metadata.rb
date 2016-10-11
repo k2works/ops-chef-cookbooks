@@ -4,7 +4,7 @@ maintainer_email 'hiroshima.arc@gmail.com'
 license 'all_rights'
 description 'Installs/Configures martini'
 long_description 'Installs/Configures martini'
-version '0.2.0'
+version '0.2.1'
 
 
 depends 'apt',    '2.6.1'
@@ -20,3 +20,4 @@ depends 'jenkins', '~> 3.1.0'
 depends 'poise-ruby', '~> 2.2.0'
 depends 'heroku', '~> 0.1.0'
 depends 'emacs24', '~> 0.5.0'
+depends 'packer', '~> 0.4.0'

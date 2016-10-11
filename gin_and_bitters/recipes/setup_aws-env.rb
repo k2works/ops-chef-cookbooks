@@ -1,3 +1,7 @@
+include_recipe 'python'
+include_recipe 'awscli'
+include_recipe 'aws'
+
 python_pip "awsebcli"
 python_pip "--upgrade awsebcli"
 
