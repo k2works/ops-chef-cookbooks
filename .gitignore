@@ -59,3 +59,10 @@ fabric.properties
 *.box
 deploy/vm/cookbooks/*
 nodes
+
+packer_cache
+*.vmdk
+*.ovf
+*.vdi
+gin_and_bitters/.delivery
+manhattan/.delivery

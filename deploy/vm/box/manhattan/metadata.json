@@ -1,9 +1,9 @@
 {
-  "name": "gin_and_bitters",
+  "name": "manhattan",
   "description": "VM for Development Environments.",
   "versions": [
     {
-      "version": "0.2.1",
+      "version": "0.0.1",
       "providers": [
         {
           "name": "virtualbox",
