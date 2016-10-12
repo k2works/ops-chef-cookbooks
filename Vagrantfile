@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  # config.vm.box = "hiroshima-arc/rails-dev-env"
-  config.vm.box = "gin_and_bitters"
+  config.vm.box = "hiroshima-arc/gin_and_bitters"
+  # config.vm.box_version = "0.2.1"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

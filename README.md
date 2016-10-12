@@ -9,6 +9,7 @@
 | ソフトウェア     | バージョン    | 備考         |
 |:---------------|:-------------|:------------|
 | vagrant   　　　| 1.8.4       |             |
+| packer    　　　| 0.8.6       |             |
 
 ## 構成
 
@@ -16,6 +17,10 @@
 + [Gin&Bitters](./gin_and_bitters)・・・インフラ環境構築作業用
 + [Martini](./martini)・・・モダンWebアプリケーション環境構築用(Node.js)
 + [Manhattan](./manhattan)・・・Rubyアプリケーション環境構築用
+
+## 公開サービス
+
++ [Atlas](https://atlas.hashicorp.com/hiroshima-arc)
 
 ## Tips
 #### `berks package`で`encode': "\xC3" on US-ASCII (Encoding::InvalidByteSequenceError)`が出たら。
