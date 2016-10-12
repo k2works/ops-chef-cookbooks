@@ -1,5 +1,9 @@
 docker_service 'default' do
-  action [:create, :start]
+  if node['etc']['passwd']['vagrant']
+    action [:create, :start]
+  else
+    action [:create]
+  end
 end
 
 bash "install docker-compose" do
@@ -20,16 +24,21 @@ bash "install docker-machine" do
   not_if {File.exists?("/usr/local/docker-machine-#{node['docker-machine']['version']}")}
 end
 
+members = []
 if node['etc']['passwd']['vagrant']
-  group 'docker' do
-    action [:modify]
-    members ['vagrant']
-    append true
-  end
+  members << 'vagrant'
+end
+if node['etc']['passwd']['ubuntu']
+  members << 'ubuntu'
+end
+if node['etc']['passwd']['kitchen']
+  members << 'kitchen'
 end
 
-gem_package 'kitchen-docker' do
-  gem_binary "/opt/chefdk/embedded/bin/gem"
-  version '2.5.0'
-  action :install
+unless members.empty?
+  group 'docker' do
+    action [:modify]
+    members members
+    append true
+  end
 end

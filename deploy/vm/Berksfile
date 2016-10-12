@@ -5,3 +5,4 @@ metadata
 # cookbook 'gin_tonic', path: './cookbooks/gin_tonic'
 # cookbook 'martini',   path: './cookbooks/martini'
 cookbook 'gin_and_bitters',   path: './cookbooks/gin_and_bitters'
+cookbook 'manhattan',   path: './cookbooks/manhattan'

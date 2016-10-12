@@ -1,0 +1,15 @@
+{
+  "name": "manhattan",
+  "description": "VM for Development Environments.",
+  "versions": [
+    {
+      "version": "0.0.1",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "./dev-env.box"
+        }
+      ]
+    }
+  ]
+}
