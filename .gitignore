@@ -57,7 +57,7 @@ fabric.properties
 ### Vagrant template
 .vagrant/
 *.box
-deploy/vm/cookbooks/*
+deploy/vagrant/cookbooks/*
 nodes
 
 packer_cache

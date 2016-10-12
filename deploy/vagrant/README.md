@@ -58,7 +58,7 @@ $ cd ./box/add_box.sh
 リリース初回時に`vagrant plugin install vagrant-exec`でプラグインを追加する。
 共有フォルダのマウントに失敗する場合は`vagrant plugin install vagrant-vbguest`でプラグインを追加する。
 
-開発用マシンのソフトウェア構成の詳細はクックブックの[README](./cookbooks/README.md)参照
+開発用マシンのソフトウェア構成の詳細はクックブックの[README](../../README.md)参照
 
 ## 参照
 + [Vagrant と Chef による仮想環境構築の自動化（VirtualBox編）](https://www.ogis-ri.co.jp/otc/hiroba/technical/vagrant-chef/chap1.html)
