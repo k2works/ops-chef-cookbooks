@@ -1,0 +1,14 @@
+{
+  "shortname": "myapp",
+  "environment": {
+    "RAILS_ENV": "test"
+  },
+  "app_source": {
+    "url": "https://github.com/k2works/opsworks-sandbox-rails-app.git",
+    "revision": "master",
+    "type": "git"
+  },
+  "data_sources": {
+    "database_name": "sqlite3:///db.sqlite3"
+  }
+}
