@@ -1,6 +1,6 @@
 ---
 driver:
-  name: docker
+  name: vagrant
 
 provisioner:
   name: chef_zero
@@ -17,6 +17,9 @@ suites:
     data_bags_path: "test/integration/data_bags"
     run_list:
       - recipe[negroni::default]
+      - recipe[negroni::shutdown]
+      - recipe[negroni::setup_delayed-job]
+      - recipe[negroni::shutdown_delayed-job]
     verifier:
       inspec_tests:
         - test/recipes
