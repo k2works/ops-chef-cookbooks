@@ -26,14 +26,15 @@ end
 app = search(:aws_opsworks_app).first
 app_path = "/srv/#{app['shortname']}"
 db = search(:aws_opsworks_rds_db_instance).first
+ruby_version = node['ruby']['version']
 
 ruby_runtime app do
   provider :ruby_build
-  version '2.3'
+  version ruby_version
 end
 
 application app_path do
-  ruby '2.3'
+  ruby ruby_version
 
   environment.update("PORT" => "80")
   environment.update(app["environment"])
