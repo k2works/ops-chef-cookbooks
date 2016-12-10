@@ -1,14 +1,17 @@
 {
+  "name": "MyApp",
   "shortname": "myapp",
   "environment": {
-    "RAILS_ENV": "test"
+    "RAILS_ENV": "production"
   },
   "app_source": {
-    "url": "https://github.com/k2works/opsworks-sandbox-rails-app.git",
+    "url": "git@github.com:k2works/opsworks-sandbox-rails-app.git",
     "revision": "master",
+    "ssh_key": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAyG6+JOZwWsGtfn6+EtWC4F/6Hw9ZqwiSQdyYuLUU5YQHz6b2\nC+PQLRPMY3JF0yUR/yij6Omkd06NwvMej2RKhUYYcCjeYIqtv0pO4YSdyzEqpeZK\nJS149Dpxue4K2wzRiZJt8QkhZU3SaELOT/hBaL3bAJZpx1vbow9aHSid3bZmtSS3\nIwwbmWqrcHiYFkwU0KesnlDSb7ra4yxsT/KAtlcycO4zXt9jyTnc64CE2HV6sLze\nOCFVVB2y3tA9mdANr9VUYPjL0ZH9pJUgE10aUP+XGcrhRFE31aHNOoaCkJ5+BKwq\n26jkAo0poQ0xw9mdh4szPrV9YxA/kJGTJ7c3/wIDAQABAoIBAQC9U+6EyLAE6sJJ\npMtC2zB/ZenMgSGAb95IHGqev1531xnRyrLMVGuGyRbeMUlHw9KWJft+vYS/thIu\nvpx1cpT6A1Z+S/yTUSwCb9zHJhAvqcfRYhFTwPpqKPLYYMUcWaVswEbd0nQbT0Gb\nfs+HtseCeyRuD6bnzBtSkePbe0xz6nNcTwYBb1awYqewLDoLhryPH1XSzlyl4OvP\n/peFjchExYOX1OFJMjT19Ku9vgtCJleqoDSmXdnp8DR3E0L481wUZJcrWGODNbkS\no6izwcDiwTk3A0zu1Yrt4ZE38jm7gJcnLZ/K/HXvGtmNjXyLXlYYppnBEFjFXz7f\nsszX04sRAoGBAP9zLo5heWuU0Pvj4pjBKn2gwO7XMMurhavKXNIeRdMi2iTPmAll\n5oNrqNnmQju0ZrpgtgIUxJ9mUYI+CR7cB5SoAYS6farpMgQQR5vRZ5j/I58G2cpz\nffeYRATXBcroVXVqJUA1pDZmDnq9yxkTPXzKbZoDY4OJBJWDsDUr9stFAoGBAMjd\nO3cvM9s3aupIl/khb8wLjW5yE+VNdc/OuKDq3U9WrPadp3nVS32nuOK42T90hiNd\nmXFcvdTJkmbNsDXXGzdFo5yjMwnVmpIroqHT1YMFetKZUgVUw6D1Yp3UhdzxP0nC\nqToxUapYoZ2PJFBIBkIsNjXP6vEFGA+VqTL/nMhzAoGAZdR3kaB/s4gOSutL8BLI\nqm3DmzJDLF2Cmrm/iK8yrHjvNs9eTxjE7Eylcb9dVcmTTeaxh2DaBKTYBzBNmHSj\nvPnAKTXiVJhDLOWEdjPitVW30HP9q7ugUmvraXaBw6IcNwMKOG9pt5m1We6AoM1P\nrIhRapzBNbUQE738JyYQanUCgYBBo0nTYLFpaWqetKo01yBZZU0KUmz9+ZoOFldu\n/lDjpEdRL6OSxIiuvyhDrnQPsFxFIkkKKmw+JMCap4x1i51xKmiUvx/mjs68BVZX\n24liD2BbgY6z/0cOSiG3wcMcuBkeWWZDhepR6DSn8CbFtUOWTCxK2W7E5A1Ayn9I\nEw+A0QKBgQDGUHK/BUwhTgqZmX4115pE/dFWIwJjpmXxjDWrKI+OLIYI8T9r/q5i\nOgIQj5ur/JhE8AQOvqUSe3F8LDtnR3qod6cwnbFMpDKcVSQSvJucvsgucHdHMQxg\nAPiTaP3v9TTOVtI/zvGZAhgCtVv79GCzR+PbgT1Dk5TLIRJfoh14Zw==\n-----END RSA PRIVATE KEY-----",
     "type": "git"
   },
-  "data_sources": {
-    "database_name": "sqlite3:///db.sqlite3"
-  }
+  "data_sources":
+  [
+    {"database_name": "db/test.sqlite3"}
+  ]
 }

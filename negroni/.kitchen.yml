@@ -1,6 +1,6 @@
 ---
 driver:
-  name: vagrant
+  name: docker
 
 provisioner:
   name: chef_zero
@@ -9,16 +9,26 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-14.04
   - name: ubuntu-16.04
+  - name: centos-7.2
+  - name: centos-6.7
 
 suites:
   - name: default
     data_bags_path: "test/integration/data_bags"
     run_list:
-      - recipe[negroni::default]
-      - recipe[negroni::shutdown]
+      - recipe[negroni::setup_package]
+      - recipe[negroni::setup_application]
+      - recipe[negroni::setup_repository]
+      - recipe[negroni::setup_middleware]
+      - recipe[negroni::setup_swap]
+      - recipe[negroni::configure_motd]
+      - recipe[negroni::deploy]
+      - recipe[negroni::reload_unicorn]
+      - recipe[negroni::shutdown_unicorn]
       - recipe[negroni::setup_delayed-job]
+      - recipe[negroni::configure_delayed-job]
+      - recipe[negroni::reload_delayed-job]
       - recipe[negroni::shutdown_delayed-job]
     verifier:
       inspec_tests:
