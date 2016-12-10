@@ -1,5 +1,3 @@
-bash "stop delayed-job" do
-  code <<-EOC
-    initctl stop delayed-job
-  EOC
+service "delayed-job" do
+  action :stop
 end

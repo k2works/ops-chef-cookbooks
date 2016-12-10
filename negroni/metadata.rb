@@ -7,6 +7,7 @@ long_description 'Installs/Configures martini'
 version '0.1.0'
 
 depends 'apt', '~> 2.9.2'
+depends 'yum', '~> 4.1.0'
 depends 'git', '~> 4.6.0'
 depends 'curl', '~> 2.0.3'
 depends 'application_ruby', '~> 4.0.1'

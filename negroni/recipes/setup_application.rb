@@ -5,5 +5,3 @@ ruby_runtime app do
   provider :ruby_build
   version ruby_version
 end
-
-include_recipe 'negroni::deploy'

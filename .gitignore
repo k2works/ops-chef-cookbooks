@@ -66,3 +66,4 @@ packer_cache
 *.vdi
 gin_and_bitters/.delivery
 manhattan/.delivery
+.idea

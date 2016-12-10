@@ -11,8 +11,10 @@ unless os.windows?
   end
 end
 
-describe package 'nginx' do
-  it { should be_installed }
+%w[git curl nodejs nginx].each do |pkg|
+  describe package pkg do
+    it { should be_installed }
+  end
 end
 
 describe service 'nginx' do
@@ -33,12 +35,13 @@ describe service 'myapp' do
   it { should be_running }
 end
 
-describe file('/etc/init/myapp.conf') do
-  it { should be_file }
-end
-
 describe port 8000 do
   it { should be_listening }
+end
+
+describe service 'delayed-job' do
+  it { should be_enabled }
+  it { should_not be_running }
 end
 
 describe file('/etc/update-motd.d/98-server-info') do
@@ -50,14 +53,5 @@ describe file('/etc/update-motd.d/99-banner') do
 end
 
 describe file('/etc/update-motd.d/98-server-info') do
-  it { should be_file }
-end
-
-describe service 'delayed-job' do
-  it { should be_enabled }
-  it { should_not be_running }
-end
-
-describe file('/etc/init/delayed-job.conf') do
   it { should be_file }
 end

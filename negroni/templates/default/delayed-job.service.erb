@@ -1,0 +1,13 @@
+[Unit]
+Description=delayed_job
+
+[Service]
+Environment=RAILS_ENV=production
+WorkingDirectory=/srv/myapp/
+ExecStart=/opt/ruby_build/builds/2.1.10/bin/bundle exec ./script/delayed_job start
+ExecStop=/opt/ruby_build/builds/2.1.10/bin/bundle exec ./script/delayed_job stop
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
