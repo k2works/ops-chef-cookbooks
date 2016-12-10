@@ -1,0 +1,16 @@
+description "delayed-job"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+respawn limit 10 5
+umask 022
+chdir /srv/myapp
+env RAILS_ENV="production"
+env BUNDLE_GEMFILE="/srv/myapp/Gemfile"
+setuid root
+kill signal TERM
+reload signal HUP
+
+exec /opt/ruby_build/builds/2.3/bin/ruby /opt/ruby_build/builds/2.3/bin/bundle exec /opt/ruby_build/builds/2.3/bin/ruby /srv/myapp/vendor/bundle/ruby/2.3.0/bin/unicorn --port 8000 /srv/myapp/config.ru
