@@ -28,8 +28,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      chef.cookbooks_path = ["./", "./cookbooks", "./site-cookbooks"]
      chef.add_recipe "apt"
      #chef.add_recipe "gin_tonic"
-     chef.add_recipe "martini"
+     #chef.add_recipe "martini"
      #chef.add_recipe "gin_and_bitters"
-     #chef.add_recipe "manhattan"
+     chef.add_recipe "manhattan"
   end
 end
