@@ -5,6 +5,7 @@
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
 include_recipe 'martini::setup_application'
+include_recipe 'martini::setup_yarn'
 include_recipe 'gin_and_bitters::setup_docker-env'
 include_recipe 'gin_and_bitters::setup_aws-env'
 include_recipe 'gin_and_bitters::setup_heroku-env'

@@ -3,6 +3,8 @@ versions = %w[
 v0.12.16
 v4.6.0
 v6.7.0
+v6.9.2
+v7.3.0
 ]
 
 if node['etc']['passwd']['kitchen']
