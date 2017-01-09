@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[black_russian::setup_application]
+      - recipe[black_russian::setup_mysql-env]
+      - recipe[black_russian::setup_postgres-env]
+      - recipe[black_russian::configure]
+      - recipe[black_russian::default]
+    verifier:
+      inspec_tests:
+        - test/recipes
+    attributes:
