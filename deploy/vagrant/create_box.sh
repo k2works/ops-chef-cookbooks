@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -e
-BOX_PATH=black_russian
+set -eBOX_PATH=manhattan
 VM_BOX=dev-env.box
 
 #export PACKER_LOG=1

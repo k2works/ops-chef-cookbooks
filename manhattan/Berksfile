@@ -3,3 +3,4 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'gin_and_bitters',   path: '../gin_and_bitters'
+cookbook 'martini',   path: '../martini'
