@@ -6,3 +6,5 @@ metadata
 cookbook 'gin_and_bitters',   path: './cookbooks/gin_and_bitters'
 cookbook 'martini',   path: './cookbooks/martini'
 #cookbook 'manhattan',   path: './cookbooks/manhattan'
+cookbook 'black_russian',   path: './cookbooks/black_russian'
+
