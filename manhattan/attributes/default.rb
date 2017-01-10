@@ -1,12 +1,12 @@
 default['ruby-env']['user'] = "vagrant"
 default['ruby-env']['group'] = "vagrant"
-default['ruby-env']['versions'] = ["2.3.0","2.3.1","2.4.0"]
+default['ruby-env']['versions'] = ["2.3.1","2.4.0"]
 default['ruby-env']['default'] = "2.4.0"
 default['ruby-env']['rbenv_url'] = "https://github.com/sstephenson/rbenv.git"
 default['ruby-env']['ruby-build_url'] = "https://github.com/sstephenson/ruby-build.git"
 default['mysql']['server_root_password'] = "password"
-default['mysql']['version'] = '5.6'
-default['postgresql']['version'] = '9.3'
+default['mysql']['version'] = '5.7'
+default['postgresql']['version'] = '9.5'
 default['postgresql']['config']['listen_addresses'] = '*'
 default['postgresql']['config']['port'] = 5432
 default['postgresql']['password']['postgres'] = 'password'

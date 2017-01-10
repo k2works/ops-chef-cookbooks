@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -eBOX_PATH=manhattan
+set -e
+BOX_PATH=manhattan
 VM_BOX=dev-env.box
 
 #export PACKER_LOG=1
