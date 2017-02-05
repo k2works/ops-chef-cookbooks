@@ -19,6 +19,7 @@
 + [Manhattan](./manhattan)・・・Rubyアプリケーション環境構築用
 + [Negroni](./negroni)・・・AWS OpsWorks Rubyアプリケーション環境構築用
 + [BlackRussian](./black_russian)・・・Javaアプリケーション環境構築用
++ [Balalaika](./balalaika)・・・.Netアプリケーション環境構築用
 
 ## 公開サービス
 

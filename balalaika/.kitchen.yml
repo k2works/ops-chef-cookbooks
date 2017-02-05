@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[balalaika::setup_application]
+      - recipe[balalaika::setup_mysql-env]
+      - recipe[balalaika::setup_postgres-env]
+      - recipe[balalaika::configure]
+      - recipe[balalaika::default]
+    verifier:
+      inspec_tests:
+        - test/recipes
+    attributes:

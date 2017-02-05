@@ -6,8 +6,7 @@ description 'Installs/Configures martini'
 long_description 'Installs/Configures martini'
 version '0.2.1'
 
-
-depends 'apt',    '2.6.1'
+depends 'apt',    '2.9.2'
 depends 'git', '~> 5.0.1'
 depends 'curl', '~> 2.0.3'
 depends 'docker', '~> 2.0'

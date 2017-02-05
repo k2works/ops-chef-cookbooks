@@ -1,0 +1,12 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+complete -C aws_completer aws
+eb_completion.bash
+export PATH="$HOME/.evm/bin:$PATH"
+export PATH="/home/vagrant/.cask/bin:$PATH"
