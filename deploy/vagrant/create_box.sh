@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-BOX_PATH=balalaika
+BOX_PATH=manhattan
 VM_BOX=dev-env.box
 
 #export PACKER_LOG=1

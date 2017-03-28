@@ -7,6 +7,8 @@
   libxml2-dev
   libqt4-dev
   libqtwebkit-dev
+  qtbase5-dev
+  libqt5webkit5-dev
   xvfb
   ruby-dev
   imagemagick
