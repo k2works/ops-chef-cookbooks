@@ -11,13 +11,13 @@ Rubyアプリケーション環境構築用仮想マシン
 | PostgreSQL     | 9.5          |             |
 | Redis          | 3.0.6        |             |
 | Mongodb        | 2.6.10       |             |
-| node           | 7.3.0        |             |
-| npm            | 3.10.10      |             |
-| yarn           | 0.21.3       |             |
+| node           | 7.9.0      |             |
+| npm            | 4.2.0      |             |
+| yarn           | 0.23.2     |             |
 | python         | 2.7.12       |             |
-| jenkins        | 2.52         |             |
-| aws-cli        | 1.11.67      |             |
-| EB CLI         | 3.10.0       |             |
+| jenkins        | 2.55         |             |
+| aws-cli        | 1.11.76      |             |
+| EB CLI         | 3.10.1       |             |
 | heroku-toolbelt|              |             |
 | heroku-cli     |              |             |
 
