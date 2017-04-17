@@ -4,7 +4,7 @@ maintainer_email 'hiroshima.arc@gmail.com'
 license 'all_rights'
 description 'Installs/Configures martini'
 long_description 'Installs/Configures martini'
-version '1.0.1'
+version '1.0.2'
 
 depends 'apt',    '2.9.2'
 depends 'git', '~> 5.0.1'

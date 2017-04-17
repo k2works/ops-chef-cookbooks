@@ -1,6 +1,6 @@
 default['ruby-env']['user'] = "vagrant"
 default['ruby-env']['group'] = "vagrant"
-default['ruby-env']['versions'] = ["2.3.1","2.4.1"]
+default['ruby-env']['versions'] = ["2.3.1","2.4.0","2.4.1"]
 default['ruby-env']['default'] = "2.4.1"
 default['ruby-env']['rbenv_url'] = "https://github.com/sstephenson/rbenv.git"
 default['ruby-env']['ruby-build_url'] = "https://github.com/sstephenson/ruby-build.git"
