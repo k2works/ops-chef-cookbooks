@@ -1,10 +1,9 @@
 include_recipe 'nvm'
 versions = %w[
 v0.12.16
-v4.6.0
-v6.7.0
-v6.9.2
-v7.3.0
+v4.8.2
+v6.10.2
+v7.9.0
 ]
 
 if node['etc']['passwd']['kitchen']

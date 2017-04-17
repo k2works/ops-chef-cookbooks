@@ -5,11 +5,6 @@ if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
 
-# User specific environment and startup programs
-PATH=$PATH:$HOME/bin
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 complete -C aws_completer aws
 eb_completion.bash
 export PATH="$HOME/.evm/bin:$PATH"

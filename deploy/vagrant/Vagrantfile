@@ -22,15 +22,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.berksfile_path = nil
   config.berkshelf.enabled = true
 
-  config.omnibus.chef_version = :latest
+  config.omnibus.chef_version = '12.19.36'
   config.vm.provision "chef_zero" do |chef|
      chef.nodes_path = "nodes"
      chef.cookbooks_path = ["./", "./cookbooks", "./site-cookbooks"]
      chef.add_recipe "apt"
      #chef.add_recipe "gin_tonic"
-     #chef.add_recipe "martini"
+     chef.add_recipe "martini"
      #chef.add_recipe "gin_and_bitters"
-     chef.add_recipe "manhattan"
+     #chef.add_recipe "manhattan"
      #chef.add_recipe "black_russian"
      #chef.add_recipe "balalaika"
   end

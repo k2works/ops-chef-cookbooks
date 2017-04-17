@@ -4,7 +4,7 @@ maintainer_email 'hiroshima.arc@gmail.com'
 license 'all_rights'
 description 'Installs/Configures martini'
 long_description 'Installs/Configures martini'
-version '0.2.0'
+version '1.0.0'
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link
@@ -20,4 +20,5 @@ depends 'nvm', '~> 0.1.7'
 depends 'poise-ruby', '~> 2.2.0'
 depends 'heroku', '~> 0.1.0'
 depends 'awscli', '~> 1.1.2'
+depends 'mongodb', '~> 0.16.2'
 depends 'gin_and_bitters'

@@ -7,10 +7,11 @@
 
 %w[
 v0.12.16
-v4.6.0
-v6.7.0
+v4.8.2
+v6.10.2
+v7.9.0
 ].each do |dir|
-  describe directory("/home/kitchen/.nvm/versions/node/#{dir}/") do
+  describe directory("/home/vagrant/.nvm/versions/node/#{dir}/") do
     it { should be_directory }
   end
 end
@@ -39,14 +40,9 @@ describe file('/usr/local/bin/eb') do
   it { should be_file }
 end
 
-# Dockerコンテナだとうまくいかない
 describe service 'docker' do
   it { should be_enabled }
   it { should be_running }
-end
-
-describe port 2375 do
-  it { should be_listening }
 end
 
 describe file('/usr/local/bin/docker-compose') do
@@ -72,14 +68,14 @@ describe port 8080 do
 end
 
 describe command 'cat /etc/group | grep docker' do
-  its('stdout') { should match /docker:x:999:kitchen/ }
+  its('stdout') { should match /docker:x:998:vagrant,jenkins/ }
 end
 
 describe file('/var/lib/jenkins') do
   it { should be_directory }
 end
 
-describe file('/home/kitchen/.bash_profile') do
+describe file('/home/vagrant/.bash_profile') do
   it { should be_file }
 end
 
@@ -89,6 +85,11 @@ end
 
 describe file('/etc/update-motd.d/99-banner') do
   it { should be_file }
+end
+
+# Mongodb
+describe port  27017 do
+  it { should be_listening }
 end
 
 

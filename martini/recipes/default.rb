@@ -6,6 +6,7 @@
 
 include_recipe 'martini::setup_application'
 include_recipe 'martini::setup_yarn'
+include_recipe 'martini::setup_mongodb-env'
 include_recipe 'gin_and_bitters::setup_docker-env'
 include_recipe 'gin_and_bitters::setup_aws-env'
 include_recipe 'gin_and_bitters::setup_heroku-env'
