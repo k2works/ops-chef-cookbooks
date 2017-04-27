@@ -6,17 +6,17 @@
 ## 前提
 | ソフトウェア     | バージョン    | 備考         |
 |:---------------|:-------------|:------------|
-| docker         | 1.11.2       |             |
-| docker-compose | 1.8.0-rc1    |             |
-| docker-machine | 1.7.2        |             |
-| aws-cli        | 1.10.42      |             |
-| eb             | 3.7.6        |             |
-| chef-dk        | 0.15.15      |             |
+| docker         | 17.04.0      |             |
+| docker-compose | 1.8.0        |             |
+| docker-machine | 0.10.0       |             |
+| aws-cli        | 1.11.81      |             |
+| eb             | 3.10.1       |             |
+| chef-dk        | 1.3.43       |             |
+| vagrant        | 1.8.5        |             |
+| packer         | 0.10.1       |             |
 | terraform      | 0.6.16       |             |
-| python         | 2.7.6        |             |
+| python         | 2.7.12       |             |
 | jenkins        |              |             |
-| heroku-toolbelt|       |             |
-| heroku-cli     |       |             |
 
 ## 構成
 + セットアップ

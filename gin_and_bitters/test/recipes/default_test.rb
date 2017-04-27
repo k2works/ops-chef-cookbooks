@@ -47,10 +47,6 @@ describe service 'docker' do
   it { should be_running }
 end
 
-describe port 2375 do
-  it { should be_listening }
-end
-
 describe file('/usr/local/bin/docker-compose') do
   it { should be_file }
 end
@@ -74,7 +70,7 @@ describe port 8080 do
 end
 
 describe command 'cat /etc/group | grep docker' do
-  its('stdout') { should match /docker:x:999:kitchen/ }
+  its('stdout') { should match /docker:x:998:vagrant,jenkins/ }
 end
 
 describe file('/var/lib/jenkins') do
@@ -89,6 +85,6 @@ describe file('/usr/bin/emacs') do
   it { should be_file }
 end
 
-describe file('/home/kitchen/.bash_profile') do
+describe file('/home/vagrant/.bash_profile') do
   it { should be_file }
 end

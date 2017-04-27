@@ -6,14 +6,7 @@ docker_service 'default' do
   end
 end
 
-bash "install docker-compose" do
-  code <<-EOC
-    curl -L https://github.com/docker/compose/releases/download/#{node['docker-compose']['version']}/docker-compose-`uname -s`-`uname -m` > /usr/local/docker-compose-#{node['docker-compose']['version']} && \
-    ln -s /usr/local/docker-compose-#{node['docker-compose']['version']} /usr/local/bin/docker-compose && \
-    chmod +x /usr/local/bin/docker-compose
-  EOC
-  not_if {File.exists?("/usr/local/docker-compose-#{node['docker-compose']['version']}")}
-end
+include_recipe 'docker_compose::installation'
 
 bash "install docker-machine" do
   code <<-EOC

@@ -6,6 +6,7 @@
 include_recipe 'gin_and_bitters::setup'
 include_recipe 'gin_and_bitters::setup_docker-env'
 include_recipe 'gin_and_bitters::setup_aws-env'
+include_recipe 'gin_and_bitters::setup_vagrant-env'
 include_recipe 'gin_and_bitters::setup_heroku-env'
 include_recipe 'gin_and_bitters::setup_jenkins-env'
 include_recipe 'gin_and_bitters::setup_emacs-env'
