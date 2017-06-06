@@ -3,7 +3,7 @@
   "description": "VM for Development Environments.",
   "versions": [
     {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "providers": [
         {
           "name": "virtualbox",

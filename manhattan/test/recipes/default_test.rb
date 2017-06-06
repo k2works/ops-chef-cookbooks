@@ -19,8 +19,9 @@ end
 
 %w[
 v0.12.16
-v4.6.0
-v6.7.0
+v4.8.2
+v6.10.2
+v7.9.0
 ].each do |dir|
   describe directory("/home/vagrant/.nvm/versions/node/#{dir}/") do
     it { should be_directory }
