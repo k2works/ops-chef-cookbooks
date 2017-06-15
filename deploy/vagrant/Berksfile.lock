@@ -59,6 +59,7 @@ GRAPH
     aws (~> 2.7.2)
     awscli (~> 1.1.2)
     chef-dk (~> 3.0.0)
+    chef-server (~> 5.4.0)
     curl (~> 2.0.3)
     docker (~> 2.0)
     docker_compose (~> 0.0)

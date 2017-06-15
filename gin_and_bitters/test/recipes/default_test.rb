@@ -25,6 +25,10 @@ describe package 'python' do
   it { should be_installed }
 end
 
+describe file('/usr/bin/chef-server-ctl') do
+  it { should be_file }
+end
+
 describe file('/usr/local/bin/aws') do
   it { should be_file }
 end
@@ -75,10 +79,6 @@ end
 
 describe file('/var/lib/jenkins') do
   it { should be_directory }
-end
-
-describe file('/usr/local/bin/emacs') do
-  it { should be_file }
 end
 
 describe file('/usr/bin/emacs') do

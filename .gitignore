@@ -67,3 +67,4 @@ packer_cache
 gin_and_bitters/.delivery
 manhattan/.delivery
 .idea
+*.pem

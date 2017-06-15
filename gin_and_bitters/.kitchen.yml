@@ -25,6 +25,7 @@ suites:
 #      - recipe[gin_and_bitters::setup_heroku-env]
 #      - recipe[gin_and_bitters::setup_jenkins-env]
 #      - recipe[gin_and_bitters::setup_emacs-env]
+#      - recipe[gin_and_bitters::setup_chef-server-env]
 #      - recipe[gin_and_bitters::configure]
 
     verifier:
