@@ -20,6 +20,8 @@ Rubyアプリケーション環境構築用仮想マシン
 | EB CLI         | 3.10.1       |             |
 | heroku-toolbelt|              |             |
 | heroku-cli     |              |             |
+| chef-dk        |              |             |
+| vagrant        |              |             |
 
 
 ## 構成

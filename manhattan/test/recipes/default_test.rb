@@ -95,3 +95,7 @@ end
 describe port  27017 do
   it { should be_listening }
 end
+
+describe package 'chef' do
+  it { should be_installed }
+end
